@@ -1,7 +1,0 @@
-{
-  "name": "greenReporting",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
