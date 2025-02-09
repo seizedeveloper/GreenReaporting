@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npx serve -s dist -l $PORT",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "chart.js": "^4.4.7",
