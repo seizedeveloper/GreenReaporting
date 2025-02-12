@@ -37,6 +37,8 @@ export default function Header() {
                 <li>
                   <NavLink
                     to="https://greenreportingwebsite-5ebb85317ef7.herokuapp.com/about"
+                    target="_blank"
+                  rel="noopener noreferrer"
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 ${
                         isActive ? 'text-lime-600' : 'text-orange-700'
@@ -49,6 +51,8 @@ export default function Header() {
                 <li>
                   <NavLink
                     to="https://greenreportingwebsite-5ebb85317ef7.herokuapp.com/contact"
+                    target="_blank"
+                  rel="noopener noreferrer"
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 ${
                         isActive ? 'text-lime-600' : 'text-orange-700'
