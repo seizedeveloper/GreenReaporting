@@ -61,12 +61,12 @@ export default function Home() {
           <div className="space-y-4">
             {/* Company Name */}
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-orange-700">
                 Company Name
               </label>
               <input
                 type="text"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
                 value={companyName}
                 onChange={(e) => setCompanyName(e.target.value)}
                 placeholder="Enter company name"
@@ -75,12 +75,12 @@ export default function Home() {
 
             {/* Company Website */}
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-orange-700">
                 Company Website
               </label>
               <input
                 type="url"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500"
                 value={companyWebsite}
                 onChange={(e) => setCompanyWebsite(e.target.value)}
                 placeholder="www.example.com"
@@ -89,15 +89,17 @@ export default function Home() {
 
             {/* Industry Dropdown */}
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-orange-700">
                 Industry
               </label>
               <select
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-lime-500 focus:border-lime-500"
                 value={selectedIndustry}
                 onChange={(e) => setSelectedIndustry(e.target.value)}
               >
-                <option value="">-- Select Industry --</option>
+                <option className="text-gray-500 bg-red-200" value="">
+                  -- Select Industry --
+                </option>
                 {industries.map((industry, index) => (
                   <option key={index} value={industry}>
                     {industry}
@@ -108,15 +110,17 @@ export default function Home() {
 
             {/* Company Size Dropdown */}
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-orange-700">
                 Company Size
               </label>
               <select
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-lime-500 focus:border-lime-500"
                 value={companySize}
                 onChange={(e) => setCompanySize(e.target.value)}
               >
-                <option value="">-- Select Company Size --</option>
+                <option className="text-gray-500" value="">
+                  -- Select Company Size --
+                </option>
                 {companySizes.map((sizeOption, index) => (
                   <option key={index} value={sizeOption}>
                     {sizeOption}
@@ -128,7 +132,7 @@ export default function Home() {
             {/* Submit Button */}
             <button
               onClick={handleIndustrySelect}
-              className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600"
+              className="w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-lime-600"
             >
               Next
             </button>

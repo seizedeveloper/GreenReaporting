@@ -667,7 +667,7 @@ export default function TransportationAndLogistics() {
       <div className="max-w-4xl mx-auto pt-6 ">
         <button
           onClick={handleIndustrySelect}
-          className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 "
+          className="w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-lime-600  "
         >
           Next
         </button>

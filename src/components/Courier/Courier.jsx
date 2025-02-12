@@ -148,8 +148,12 @@ export default function Courier() {
             <label className="text-lg font-medium text-green-900">
               Modes of transportation
             </label>
-            <div className="bg-green-100 text-green-800 font-medium p-3 rounded-md mt-2">
-              {mode}
+            <div className="flex items-center bg-green-100 rounded px-3 py-2 mt-2">
+              <input
+                type="text"
+                defaultValue="MotorCycle"
+                className="bg-transparent w-full text-lg font-medium text-gray-800 focus:outline-none"
+              />
             </div>
           </div>
 
@@ -281,8 +285,12 @@ export default function Courier() {
               <label className="text-lg font-medium text-green-900">
                 Modes of transportation
               </label>
-              <div className="bg-green-100 text-green-800 font-medium p-3 rounded-md mt-2">
-                {mode}
+              <div className="flex items-center bg-green-100 rounded px-3 py-2 mt-2">
+                <input
+                  type="text"
+                  defaultValue="MotorCycle"
+                  className="bg-transparent w-full text-lg font-medium text-gray-800 focus:outline-none"
+                />
               </div>
             </div>
 
@@ -432,8 +440,12 @@ export default function Courier() {
               <label className="text-lg font-medium text-green-900">
                 Packaging weight
               </label>
-              <div className="bg-green-100 text-green-800 font-medium p-3 rounded-md mt-2">
-                {mode}
+              <div className="flex items-center bg-green-100 rounded px-3 py-2 mt-2">
+                <input
+                  type="text"
+                  defaultValue="0"
+                  className="bg-transparent w-full text-lg font-medium text-gray-800 focus:outline-none"
+                />
               </div>
             </div>
 
@@ -442,8 +454,12 @@ export default function Courier() {
               <label className="text-lg font-medium text-green-900">
                 Dimensions
               </label>
-              <div className="bg-green-100 text-green-800 font-medium p-3 rounded-md mt-2">
-                {mode}
+              <div className="flex items-center bg-green-100 rounded px-3 py-2 mt-2">
+                <input
+                  type="text"
+                  defaultValue="0"
+                  className="bg-transparent w-full text-lg font-medium text-gray-800 focus:outline-none"
+                />
               </div>
             </div>
           </div>
@@ -476,8 +492,12 @@ export default function Courier() {
               <label className="text-lg font-medium text-green-900">
                 Quantity
               </label>
-              <div className="bg-green-100 text-green-800 font-medium p-3 rounded-md mt-2">
-                {mode}
+              <div className="flex items-center bg-green-100 rounded px-3 py-2 mt-2">
+                <input
+                  type="text"
+                  defaultValue="0"
+                  className="bg-transparent w-full text-lg font-medium text-gray-800 focus:outline-none"
+                />
               </div>
             </div>
           </div>
@@ -486,7 +506,7 @@ export default function Courier() {
         <div className="max-w-4xl mx-auto pt-6 ">
           <button
             onClick={handleIndustrySelect}
-            className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 "
+            className="w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-lime-600  "
           >
             Next
           </button>
